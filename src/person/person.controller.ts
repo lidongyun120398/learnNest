@@ -1,13 +1,4 @@
-import {
-  Controller,
-  Get,
-  Param,
-  Query,
-  Body,
-  Post,
-  UseInterceptors,
-  UploadedFiles,
-} from '@nestjs/common';
+import { Controller, Get, Param, Query, Body, Post, UseInterceptors, UploadedFiles } from '@nestjs/common';
 import { AnyFilesInterceptor } from '@nestjs/platform-express';
 import { CreatePersonDto } from './dto/create-person.dto';
 
