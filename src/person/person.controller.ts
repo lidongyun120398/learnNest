@@ -49,10 +49,7 @@ export class PersonController {
       dest: 'uploads/',
     }),
   )
-  body2(
-    @Body() createPersonDto: CreatePersonDto,
-    @UploadedFiles() files: Array<Express.Multer.File>,
-  ) {
+  body2(@Body() createPersonDto: CreatePersonDto, @UploadedFiles() files: Array<Express.Multer.File>) {
     console.log(files);
     return `received: ${JSON.stringify(createPersonDto)}`;
   }
